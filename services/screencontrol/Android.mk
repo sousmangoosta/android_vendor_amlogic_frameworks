@@ -159,7 +159,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_MODULE:= videomediaconvertortest
 
-LOCAL_MODULE_TAGS := debug
+#LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_EXECUTABLE)
 ################################################################################
@@ -201,7 +201,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_MODULE:= tspacktest
 
-LOCAL_MODULE_TAGS := debug
+#LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_EXECUTABLE)
 ################################################################################
@@ -274,7 +274,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_MODULE:= rgbtest
 
-LOCAL_MODULE_TAGS:= debug
+#LOCAL_MODULE_TAGS:= debug
 
 include $(BUILD_EXECUTABLE)
 ############################################
@@ -316,7 +316,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_MODULE:= pngtest
 
-LOCAL_MODULE_TAGS := debug
+#LOCAL_MODULE_TAGS := debug
 
 include $(BUILD_EXECUTABLE)
 ################################################################################
