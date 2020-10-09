@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := $(call all-subdir-java-files)
 LOCAL_JAVA_LIBRARIES := droidlogic \
     droidlogic-tv
 
-LOCAL_JNI_SHARED_LIBRARIES := libremotecontrol_jni libjniuevent
+#LOCAL_JNI_SHARED_LIBRARIES := libremotecontrol_jni libjniuevent
 
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
