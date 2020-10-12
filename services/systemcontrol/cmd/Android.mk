@@ -33,6 +33,7 @@ LOCAL_STATIC_LIBRARIES := \
 
 LOCAL_C_INCLUDES := \
   external/zlib \
+  system/core/libcutils/include/cutils \
   $(BOARD_AML_VENDOR_PATH)/frameworks/services/systemcontrol
 
 LOCAL_FORCE_STATIC_EXECUTABLE := true

@@ -35,7 +35,7 @@
 const char *PROFIX_UBOOTENV_VAR = "ubootenv.var.";
 
 Ubootenv::Ubootenv() :
-    mEnvLock(MUTEX_INITIALIZER) {
+    mEnvLock(PTHREAD_MUTEX_INITIALIZER) {
 
     init();
 
@@ -86,7 +86,7 @@ int Ubootenv::updateValue(const char* name, const char* value) {
     if (!strcmp(value, envValue))
         return 0;
 
-    mutex_lock(&mEnvLock);
+    pthread_mutex_lock(&mEnvLock);
     set(envName, value, true);
 
     int i = 0;
@@ -102,7 +102,7 @@ int Ubootenv::updateValue(const char* name, const char* value) {
         SYS_LOGI("[ubootenv] Save ubootenv to %s succeed!\n", mEnvPartitionName);
     }
 
-    mutex_unlock(&mEnvLock);
+    pthread_mutex_unlock(&mEnvLock);
 
     return ret;
 }
@@ -114,10 +114,10 @@ const char * Ubootenv::getValue(const char * key) {
         return NULL;
     }
 
-    mutex_lock(&mEnvLock);
+    pthread_mutex_lock(&mEnvLock);
     const char* envName = key + strlen(PROFIX_UBOOTENV_VAR);
     const char* envValue = get(envName);
-    mutex_unlock(&mEnvLock);
+    pthread_mutex_unlock(&mEnvLock);
     return envValue;
 }
 
@@ -130,7 +130,7 @@ void Ubootenv::printValues() {
 }
 
 int Ubootenv::reInit() {
-   mutex_lock(&mEnvLock);
+   pthread_mutex_lock(&mEnvLock);
 
    if (mEnvData.image) {
        free(mEnvData.image);
@@ -148,7 +148,7 @@ int Ubootenv::reInit() {
    }
    init();
 
-   mutex_unlock(&mEnvLock);
+   pthread_mutex_unlock(&mEnvLock);
    return 0;
 }
 

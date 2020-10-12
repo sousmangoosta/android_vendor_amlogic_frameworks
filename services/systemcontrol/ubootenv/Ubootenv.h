@@ -73,7 +73,7 @@ private:
     environment_t mEnvData;
     env_attribute_t mEnvAttrHeader;
 
-    mutex_t mEnvLock;
+    pthread_mutex_t mEnvLock;
     bool mEnvInitDone;
 };
 
