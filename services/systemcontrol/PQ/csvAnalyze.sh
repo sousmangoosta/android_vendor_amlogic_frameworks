@@ -6,6 +6,7 @@ CsvPath=""
 definePath=""
 version=""
 rootPath="vendor/amlogic/common/frameworks/services/systemcontrol/PQ"
+PATH=/usr/local/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/sbin
 
 function Prepare() {
     CsvPath=`find ${rootPath} -name ssmHeader.csv`
