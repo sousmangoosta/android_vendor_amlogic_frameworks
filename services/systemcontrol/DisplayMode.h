@@ -654,7 +654,7 @@ private:
     bool mVideoPlaying;
     bool mIsRecovery = false;
 
-    mutex_t mEnvLock;
+    pthread_mutex_t mEnvLock;
 
     int mDisplayWidth;
     int mDisplayHeight;

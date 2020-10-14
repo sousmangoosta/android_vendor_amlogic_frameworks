@@ -1602,7 +1602,7 @@ void DisplayMode::getPosition(const char* curMode, int *position) {
         defaultHeight = FULL_HEIGHT_1080;
     }
 
-    mutex_lock(&mEnvLock);
+    pthread_mutex_lock(&mEnvLock);
     sprintf(ubootvar, "ubootenv.var.%s_x", keyValue);
     position[0] = getBootenvInt(ubootvar, 0);
     sprintf(ubootvar, "ubootenv.var.%s_y", keyValue);
@@ -1611,7 +1611,7 @@ void DisplayMode::getPosition(const char* curMode, int *position) {
     position[2] = getBootenvInt(ubootvar, defaultWidth);
     sprintf(ubootvar, "ubootenv.var.%s_h", keyValue);
     position[3] = getBootenvInt(ubootvar, defaultHeight);
-    mutex_unlock(&mEnvLock);
+    pthread_mutex_unlock(&mEnvLock);
 
 }
 
@@ -1660,7 +1660,7 @@ void DisplayMode::setPosition(int left, int top, int width, int height) {
         strcpy(keyValue, MODE_PANEL);
     }
 
-    mutex_lock(&mEnvLock);
+    pthread_mutex_lock(&mEnvLock);
     sprintf(ubootvar, "ubootenv.var.%s_x", keyValue);
     setBootEnv(ubootvar, x);
     sprintf(ubootvar, "ubootenv.var.%s_y", keyValue);
@@ -1669,7 +1669,7 @@ void DisplayMode::setPosition(int left, int top, int width, int height) {
     setBootEnv(ubootvar, w);
     sprintf(ubootvar, "ubootenv.var.%s_h", keyValue);
     setBootEnv(ubootvar, h);
-    mutex_unlock(&mEnvLock);
+    pthread_mutex_unlock(&mEnvLock);
 
 }
 
