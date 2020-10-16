@@ -175,7 +175,8 @@ LOCAL_SRC_FILES:= \
 
 LOCAL_STATIC_LIBRARIES := \
   libz \
-  libcutils
+  libcutils \
+  libbase
 
 LOCAL_C_INCLUDES := \
   external/zlib \
