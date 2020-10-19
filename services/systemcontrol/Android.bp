@@ -23,11 +23,15 @@ cc_library_static {
         "libcutils",
         "libz",
     ],
+    shared_libs: [
+        "libcutils",
+    ],
     include_dirs: [
         "external/zlib",
         "external/libcxx/include",
         "system/core/libutils/include",
         "system/core/liblog/include",
+        "system/core/libcutils/include",
     ],
     cflags: [
         "-DRECOVERY_MODE",
