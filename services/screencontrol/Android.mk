@@ -33,7 +33,6 @@ LOCAL_SHARED_LIBRARIES := \
         libbinder \
         libandroid \
         libhidlbase \
-	libhidltransport \
         libui \
         libhardware \
         libmedia \
@@ -70,8 +69,7 @@ LOCAL_SHARED_LIBRARIES := \
   libcutils \
   liblog \
   libhidlbase \
-  libhidlmemory \
-  libhidltransport
+  libhidlmemory
 
 LOCAL_MODULE:= libscreencontrolclient
 
@@ -112,7 +110,6 @@ LOCAL_SHARED_LIBRARIES:= \
         libutils  \
         liblog \
         libhidlbase \
-        libhidltransport \
         libmediaextractor \
         libscreencontrolservice
 
@@ -340,7 +337,6 @@ LOCAL_SHARED_LIBRARIES := \
     libui \
     libhardware \
     libhidlbase \
-    libhidltransport \
     libhidlmemory \
     libmedia \
     libmediautils \

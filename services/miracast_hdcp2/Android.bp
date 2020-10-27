@@ -12,7 +12,6 @@ cc_binary {
     ],
     shared_libs: [
         "libhidlbase",
-        "libhidltransport",
         "liblog",
         "libutils",
         "libcutils",
@@ -29,7 +28,6 @@ cc_binary {
     srcs: ["test/hdcp2_rx_binder_test.cpp"],
     shared_libs: [
         "libhidlbase",
-        "libhidltransport",
         "liblog",
         "libutils",
         "vendor.amlogic.hardware.miracast_hdcp2@1.0",
@@ -46,7 +44,6 @@ cc_binary {
     srcs: ["test/hdcp2_tx_binder_test.cpp"],
     shared_libs: [
         "libhidlbase",
-        "libhidltransport",
         "liblog",
         "libutils",
         "vendor.amlogic.hardware.miracast_hdcp2@1.0",

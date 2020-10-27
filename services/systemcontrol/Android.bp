@@ -61,7 +61,6 @@ cc_library_shared {
         "vendor.amlogic.hardware.systemcontrol@1.1",
         "libbase",
         "libhidlbase",
-        "libhidltransport",
     ],
 
     product_specific: true,

@@ -13,7 +13,6 @@ LOCAL_C_INCLUDES += \
 LOCAL_SHARED_LIBRARIES := \
   vendor.amlogic.hardware.remotecontrol@1.0 \
   libhidlbase \
-  libhidltransport \
   libutils \
   libcutils \
   liblog

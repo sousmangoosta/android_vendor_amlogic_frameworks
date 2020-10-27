@@ -10,7 +10,6 @@ LOCAL_SHARED_LIBRARIES := \
     vendor.amlogic.hardware.subtitleserver@1.0 \
     libbase \
     libhidlbase \
-    libhidltransport \
     liblog \
     libcutils \
     libutils

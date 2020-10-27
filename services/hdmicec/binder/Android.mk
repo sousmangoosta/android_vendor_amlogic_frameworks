@@ -17,7 +17,6 @@ LOCAL_SHARED_LIBRARIES := \
     vendor.amlogic.hardware.hdmicec@1.0 \
     libbase \
     libhidlbase \
-    libhidltransport \
     libcutils \
     libutils \
     liblog

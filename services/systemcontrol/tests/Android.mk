@@ -14,8 +14,7 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_SHARED_LIBRARIES += \
   vendor.amlogic.hardware.systemcontrol@1.1 \
   libbase \
-  libhidlbase \
-  libhidltransport
+  libhidlbase
 
 LOCAL_C_INCLUDES += \
   $(BOARD_AML_VENDOR_PATH)/frameworks/services/systemcontrol/PQ/include

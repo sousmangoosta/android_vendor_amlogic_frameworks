@@ -25,7 +25,6 @@ LOCAL_SHARED_LIBRARIES := \
     libsystemcontrolservice \
     libbase \
     libhidlbase \
-    libhidltransport \
     libcutils \
     libutils \
     libbinder \
