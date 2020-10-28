@@ -1,0 +1,7 @@
+cc_binary {
+  name: "dv_config",
+  srcs: ["dv_config.c"],
+  static_executable: true,
+  static_libs: ["libcutils","libc","liblog"],
+  proprietary: true,
+}
