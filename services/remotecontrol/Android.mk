@@ -55,7 +55,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := rc_server
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_INIT_RC := rc_server.rc
 
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 26 && echo OK),OK)
