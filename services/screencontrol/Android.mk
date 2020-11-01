@@ -115,7 +115,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_MODULE:= libstagefright_mediaconvertor
 
 include $(BUILD_SHARED_LIBRARY)
@@ -369,7 +369,7 @@ LOCAL_C_INCLUDES += \
     system/libhidl/libhidlmemory/include \
     frameworks/native/include \
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_MODULE:= screencontrol
 LOCAL_32_BIT_ONLY := true
 

@@ -35,7 +35,7 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_STATIC_LIBRARIES := \
     libhdmi_cec_static
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_INIT_RC := hdmicecd.rc
 
 LOCAL_MODULE:= hdmicecd

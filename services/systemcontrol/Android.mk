@@ -54,7 +54,7 @@ PQ_INCLUDE_PATH := $(wildcard $(BOARD_AML_VENDOR_PATH)/frameworks/services/syste
 LIB_SQLITE_PATH := $(wildcard external/sqlite/dist)
 
 LOCAL_CFLAGS += -DHDCP_AUTHENTICATION
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_CFLAGS += -DANDROID_PLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 LOCAL_CFLAGS += -Wno-unused-variable -Wno-unused-parameter
 
@@ -153,7 +153,7 @@ LOCAL_CFLAGS += -DGXTVBB_ENVSIZE
 endif
 
 LOCAL_CFLAGS += -DRECOVERY_MODE
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 LOCAL_CFLAGS += -DANDROID_PLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 LOCAL_CFLAGS += -Wno-unused-variable -Wno-unused-parameter
 

@@ -21,7 +21,7 @@ LOCAL_C_INCLUDES += \
 LOCAL_C_INCLUDES += \
    external/libcxx/include
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 
 LOCAL_MODULE:= libsubtitlebinder
 

@@ -36,7 +36,7 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 
 LOCAL_MODULE:= subtitleserver
 #LOCAL_32_BIT_ONLY := true

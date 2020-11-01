@@ -11,7 +11,7 @@ LOCAL_C_INCLUDES += \
    hardware/libhardware/include \
    frameworks/native/libs/binder/include
 
-LOCAL_CPPFLAGS += -std=c++14
+LOCAL_CPPFLAGS += -std=c++17
 
 LOCAL_SHARED_LIBRARIES := \
     vendor.amlogic.hardware.hdmicec@1.0 \
